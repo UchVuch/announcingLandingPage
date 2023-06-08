@@ -1,15 +1,15 @@
 :root {
   --text-white: #ffffff;
-  --bg: #16063C;
+  --bg: #16063c;
   --container-width: 1012px;
   --container-padding: 41px;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap");
 
 /* Global */
 .body {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 20px;
@@ -21,6 +21,54 @@
   overflow-x: hidden;
 }
 
+.animate-fade-start {
+  opacity: 0;
+  transition: opacity ease-in 1s;
+}
+
+.animate-fade-show {
+  opacity: 1;
+}
+
+.animate-typing {
+  display: inline-block;
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  white-space: nowrap;
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  animation: typing 2.5s steps(30, end);
+}
+
+.animate-blink {
+  animation: blinkText 1.2s infinite normal;
+  animation-delay: 2.5s;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+    white-space: nowrap;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blinkText{
+  from{color: white;}
+  to{color: transparent;}
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: white;
+  }
+}
+
 .body__inner {
   overflow: hidden;
   position: relative;
@@ -30,7 +78,7 @@
 }
 
 .body__inner::before {
-  content: '';
+  content: "";
   position: absolute;
   z-index: -2;
   top: 0;
@@ -42,7 +90,7 @@
 }
 
 .body__inner::after {
-  content: '';
+  content: "";
   position: absolute;
   z-index: -2;
   bottom: 0;
@@ -54,7 +102,7 @@
 }
 
 .line-blue {
-  content: '';
+  content: "";
   position: absolute;
   z-index: -1;
   top: 527px;
@@ -65,7 +113,7 @@
   height: 957px;
 }
 .line-red {
-  content: '';
+  content: "";
   position: absolute;
   z-index: -1;
   top: 0;
@@ -77,7 +125,7 @@
 }
 
 .bg-light-1 {
-  content: '';
+  content: "";
   position: absolute;
   z-index: -1;
   left: -506px;
@@ -90,7 +138,7 @@
 }
 
 .bg-light-2 {
-  content: '';
+  content: "";
   position: absolute;
   z-index: -1;
   top: -645px;
@@ -103,7 +151,7 @@
 }
 
 .bg-light-3 {
-  content: '';
+  content: "";
   position: absolute;
   z-index: -1;
   top: -425px;
@@ -116,7 +164,7 @@
 }
 
 .bg-light-4 {
-  content: '';
+  content: "";
   position: absolute;
   z-index: -1;
   right: -288px;
@@ -129,7 +177,7 @@
 }
 
 .bg-light-5 {
-  content: '';
+  content: "";
   position: absolute;
   z-index: -1;
   bottom: -408px;
@@ -164,7 +212,7 @@ img {
 }
 
 .title {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 48px;
@@ -181,11 +229,15 @@ img {
 
 /*first section*/
 .header {
+  height: 100vh;
   padding: 226px 0 225px;
 }
 
 .main-title {
   text-align: center;
+}
+
+.main-title__content {
   font-weight: 700;
   font-size: 112px;
   line-height: 136px;
@@ -208,7 +260,7 @@ img {
 .social__content {
   display: flex;
   justify-content: space-between;
-  gap: 35px;
+  gap: 45px;
 }
 
 .social__line {
@@ -220,7 +272,7 @@ img {
 }
 
 .social__line::before {
-  content: '';
+  content: "";
   position: absolute;
   z-index: -1;
   top: -15px;
@@ -229,12 +281,14 @@ img {
   left: -15px;
   border-radius: 41px;
   border: 4px solid transparent;
-  background: linear-gradient(var(--bg), var(--bg)) padding-box, linear-gradient(180deg, #46A1C0 0%, #261965 100%) border-box;
+  background: linear-gradient(var(--bg), var(--bg)) padding-box,
+    linear-gradient(180deg, #46a1c0 0%, #261965 100%) border-box;
 }
 
 .social__line .twitter-timeline {
   border-radius: 31px;
   border: 2px solid #261965;
+  color: #fff;
 }
 
 #twitter-widget-0 {
@@ -246,7 +300,7 @@ img {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
-  column-gap: 72px;
+  gap: 72px;
   padding-top: 57px;
 }
 
@@ -258,7 +312,7 @@ img {
 }
 
 .social__item::before {
-  content: '';
+  content: "";
   position: absolute;
   z-index: -1;
   top: -4px;
@@ -267,7 +321,8 @@ img {
   left: -4px;
   border-radius: 16px;
   border: 4px solid transparent;
-  background: linear-gradient(var(--bg), var(--bg)) padding-box, linear-gradient(180deg, #46A1C0 0%, #261965 100%) border-box;
+  background: linear-gradient(var(--bg), var(--bg)) padding-box,
+    linear-gradient(180deg, #46a1c0 0%, #261965 100%) border-box;
 }
 
 .social__item-content {
@@ -277,9 +332,18 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(180deg, #C486E5 -13.99%, #3E6CEB 16.71%, #67C8FF 51.04%, #2E60DA 79.31%, #D084E1 115.24%, #AA7FC9 115.26%, #AA7FC9 115.26%, #AA7FC9 115.26%);
+  background: linear-gradient(
+    180deg,
+    #c486e5 -13.99%,
+    #3e6ceb 16.71%,
+    #67c8ff 51.04%,
+    #2e60da 79.31%,
+    #d084e1 115.24%,
+    #aa7fc9 115.26%,
+    #aa7fc9 115.26%,
+    #aa7fc9 115.26%
+  );
 }
-
 
 /*form section*/
 .footer {
@@ -289,11 +353,21 @@ img {
 .form {
   position: relative;
   border-radius: 31px;
-  background: linear-gradient(95.65deg, #261965 -9.08%, #3E6CEB 20.46%, #2E60DA 53.5%, #2E60DA 80.7%, #261965 115.28%, #AA7FC9 115.29%, #AA7FC9 115.29%, #AA7FC9 115.29%);
+  background: linear-gradient(
+    95.65deg,
+    #261965 -9.08%,
+    #3e6ceb 20.46%,
+    #2e60da 53.5%,
+    #2e60da 80.7%,
+    #261965 115.28%,
+    #aa7fc9 115.29%,
+    #aa7fc9 115.29%,
+    #aa7fc9 115.29%
+  );
 }
 
 .form::before {
-  content: '';
+  content: "";
   position: absolute;
   z-index: -1;
   top: -2px;
@@ -302,11 +376,23 @@ img {
   left: -2px;
   border-radius: 33px;
   border: 3px solid transparent;
-  background: linear-gradient(var(--bg), var(--bg)) padding-box, linear-gradient(180deg, #C486E5 -13.99%, #3E6CEB 16.71%, #67C8FF 51.04%, #2E60DA 79.31%, #D084E1 115.24%, #AA7FC9 115.26%, #AA7FC9 115.26%, #AA7FC9 115.26%) border-box;
+  background: linear-gradient(var(--bg), var(--bg)) padding-box,
+    linear-gradient(
+        180deg,
+        #c486e5 -13.99%,
+        #3e6ceb 16.71%,
+        #67c8ff 51.04%,
+        #2e60da 79.31%,
+        #d084e1 115.24%,
+        #aa7fc9 115.26%,
+        #aa7fc9 115.26%,
+        #aa7fc9 115.26%
+      )
+      border-box;
 }
 
 .form::after {
-  content: '';
+  content: "";
   position: absolute;
   z-index: 1;
   left: 0;

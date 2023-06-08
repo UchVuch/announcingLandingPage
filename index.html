@@ -8,6 +8,7 @@
   <title>Cooming soon</title>
   <link href="./css/reset.css" rel="stylesheet">
   <link href="./css/style.css" rel="stylesheet">
+  <link href="./css/media.css" rel="stylesheet">
 </head>
 
 <body class="body">
@@ -15,55 +16,65 @@
     <div class="wrapper container">
       <header class="header">
         <h1 class="main-title">
-          Coming soon...
-          <span class="subtitle">“Greatest things take time to create the greatest history”</span>
+          <span class="main-title__content animate-typing">Coming soon
+            <span class="animate-blink">.</span>
+            <span class="animate-blink" style="animation-delay: 2.7s;">.</span>
+            <span class="animate-blink" style="animation-delay: 2.9s;">.</span>
+          </span>
+          <span class="subtitle animate-fade-start" data-animate style="transition-delay: 2.5s;">“Greatest things take time to create the greatest history”</span>
         </h1>
       </header>
       <main class="main">
         <section class="social">
-          <h2 class="title">Social media</h2>
-          <div class="social__content">
-            <div class="social__line">
-              <a class="twitter-timeline"data-lang="en" data-width="341" data-height="557" data-theme="dark" href="https://twitter.com/playdtf?ref_src=twsrc%5Etfw">Tweets by playdtf</a>
-              <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+          <h2 class="title animate-fade-start" data-animate>Social media</h2>
+          <div class="animate-fade-start" data-animate>
+            <div class="social__content">
+              <div class="social__line">
+                <a class="twitter-timeline"data-lang="en" data-width="341" data-height="557" data-theme="dark" href="https://twitter.com/playdtf?ref_src=twsrc%5Etfw">Tweets by playdtf</a>
+                <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+              </div>
+              <div>
+                <ul class="social__list">
+                  <li class="social__item">
+                    <a class="social__item-content" href="#!">
+                      <img src="./images/facebook.svg" alt="facebook">
+                    </a>
+                  </li>
+                  <li class="social__item">
+                    <a class="social__item-content" href="#!">
+                      <img src="./images/instagram.svg" alt="instagram">
+                    </a>
+                  </li>
+                  <li class="social__item">
+                    <a class="social__item-content" href="#!">
+                      <img class="youtube-icon" src="./images/youtube.svg" alt="youtube">
+                    </a>
+                  </li>
+                  <li class="social__item">
+                    <a class="social__item-content" href="#!">
+                      <img src="./images/paper.svg" alt="paper">
+                    </a>
+                  </li>
+                </ul>
+              </div>
             </div>
-            <ul class="social__list">
-              <li class="social__item">
-                <a class="social__item-content" href="#!">
-                  <img src="./images/facebook.svg" alt="facebook">
-                </a>
-              </li>
-              <li class="social__item">
-                <a class="social__item-content" href="#!">
-                  <img src="./images/instagram.svg" alt="instagram">
-                </a>
-              </li>
-              <li class="social__item">
-                <a class="social__item-content" href="#!">
-                  <img src="./images/youtube.svg" alt="youtube">
-                </a>
-              </li>
-              <li class="social__item">
-                <a class="social__item-content" href="#!">
-                  <img src="./images/paper.svg" alt="paper">
-                </a>
-              </li>
-            </ul>
           </div>
         </section>
       </main>
       <footer class="footer">
-        <form class="form">
-          <div class="form__content">
-            <h2 class="form__title">Track every news by your email</h2>
-            <div class="form__input">
-              <input type="text" placeholder="Enter your email">
-              <button class="form__input-button">
-                <img src="./images/arrows.svg" alt="Button for enter email" title="Enter email">
-              </button>
+        <div class="animate-fade-start" data-animate>
+          <form class="form">
+            <div class="form__content">
+              <h2 class="form__title">Track every news by your email</h2>
+              <div class="form__input">
+                <input type="text" placeholder="Enter your email">
+                <button class="form__input-button">
+                  <img src="./images/arrows.svg" alt="Button for enter email" title="Enter email">
+                </button>
+              </div>
             </div>
-          </div>
-        </form>
+          </form>
+        </div>
       </footer>
     </div>
     <div class="line-blue"></div>
@@ -74,6 +85,8 @@
     <div class="bg-light-4"></div>
     <div class="bg-light-5"></div>
   </div>
+
+  <script src="./index.js"></script>
 </body>
 
 </html>

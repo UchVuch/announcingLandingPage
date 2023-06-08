@@ -1,0 +1,228 @@
+@media (max-width: 1280px) {
+    .social__list {
+        gap: 32px;
+    }
+}
+@media (max-width: 960px) {
+    .main-title__content {
+        font-size: 75px;
+        line-height: 96px;
+    }
+
+    .subtitle {
+        font-size: 26px;
+    }
+
+    .social__content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .social__line {
+        margin: 0;
+    }
+
+    .social__list {
+        max-width: 100%;
+    }
+
+    .social__item {
+        width: 100px;
+        height: 100px;
+        padding: 4px;
+    }
+
+    .social__item::before {
+        border-radius: 31px;
+    }
+
+    .social__item-content {
+        border-radius: 28px;
+    }
+
+    .form__content {
+        display: block;
+    }
+
+    .form__title {
+        margin-bottom: 24px;
+    }
+
+    .form__input input {
+        width: 100%;
+    }
+}
+@media (max-width: 600px) {
+    .title {
+        font-size: 32px;
+        line-height: 39px;
+        margin-bottom: 33px;
+    }
+
+    .header {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 10px 0 10px;
+    }
+
+    .main-title {
+        margin-bottom: 27px;
+    }
+    
+    .main-title__content {
+        font-size: 35px;
+        line-height: 48px;
+    }
+
+    .subtitle {
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 19px;
+    }
+
+    .social {
+        padding-bottom: 19px;
+    }
+
+    .social__content {
+        gap: 20px;
+    }
+
+    .twitter-timeline {
+        width: 280px;
+        height: 280px;
+    }
+
+    .social__line {
+        position: relative;
+        width: 280px;
+        height: 280px;
+        margin-top: 10px;
+        margin-bottom: 22px;
+    }
+
+    .social__list {
+        gap: 11px;
+        padding-top: 0;
+    }
+
+    .social__item {
+        width: 62px;
+        height: 62px;
+        padding: 3px 2px;
+    }
+
+    .social__item::before {
+        top: -3px;
+        right: -2px;
+        bottom: -2px;
+        left: -2px;
+        border: 2px solid;
+        border-radius: 18px;
+    }
+
+    .social__item-content {
+        border-radius: 16px;
+    }
+
+    .social__item-content img {
+        width: 43px;
+        height: 43px;
+    }
+
+    .social__item-content .youtube-icon {
+        width: 39px;
+        height: 30px;
+    }
+
+    .footer {
+        padding: 47px 0 48px;
+    }
+
+    .form::after {
+        background-image: url(../images/form-decor-mob.png);
+        background-size: cover;
+    }
+
+    .form__content {
+        padding: 27px 25px 35px 25px;
+    }
+
+    .form__title {
+        max-width: 100%;
+        text-align: center;
+        font-size: 24px;
+        line-height: 29px;
+        margin-bottom: 45px;
+    }
+
+    .form__input input {
+        border-radius: 40px;
+        padding: 17px 35px 18px 18px;
+    }
+
+    .form__input-button {
+        top: 18px;
+        right: 17px;
+    }
+
+    .form__input-button img {
+        width: 13px;
+    }
+
+    .body__inner::before {
+        top: 0;
+        left: 0;
+        background-image: url(../images/red-abstr-mob.png);
+        background-size: cover;
+        height: 640px;
+    }
+
+    .body__inner::after {
+        background-image: url(../images/red-abstr-bootm-mob.png);
+        background-size: cover;
+        height: 549px;
+    }
+
+    .line-blue {
+        top: 103vh;
+        left: 0;
+        background-image: url(../images/left-blue-lines-mob.png);
+        width: 172px;
+        height: 358px;
+    }
+    .line-red {
+        top: 45vh;
+        right: 0;
+        background-image: url(../images/right-red-lines-mob.png);
+        width: 195px;
+        height: 569px;
+    }
+    .bg-light-1,
+    .bg-light-2,
+    .bg-light-3,
+    .bg-light-4,
+    .bg-light-5 {
+        display: none;
+    }
+}
+
+@media (max-width: 415px) {
+    .body__inner::before {
+        height: 540px;
+    }
+}
+
+@media (max-width: 375px) {
+    .title {
+        font-size: 32px;
+        line-height: 39px;
+        margin-bottom: 33px;
+    }
+
+    .header {
+        display: block;
+        padding: 125px 0 10px;
+    }
+}
