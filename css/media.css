@@ -1,3 +1,14 @@
+@media (min-width: 1921px) {
+    .header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .body__inner::before {
+        height: 100vh;
+    }
+}
 @media (max-width: 1280px) {
     .social__list {
         gap: 32px;
@@ -69,7 +80,7 @@
     .main-title {
         margin-bottom: 27px;
     }
-    
+
     .main-title__content {
         font-size: 35px;
         line-height: 48px;
