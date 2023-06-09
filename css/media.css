@@ -110,7 +110,7 @@
         bottom: -12px;
         left: -10px;
     }
-    
+
     .social__list {
         gap: 11px;
         padding-top: 0;
@@ -127,7 +127,7 @@
         right: -2px;
         bottom: -2px;
         left: -2px;
-        border: 2px solid;
+        border: 2px solid transparent;
         border-radius: 18px;
     }
 
