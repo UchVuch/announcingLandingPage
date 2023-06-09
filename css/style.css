@@ -38,7 +38,7 @@
   margin: 0 auto; /* Gives that scrolling effect as the typing happens */
   animation: typing 2.5s steps(30, end);
   animation-delay: 1s;
-  animation-fill-mode: forwards; 
+  animation-fill-mode: forwards;
 }
 
 .animate-blink {
@@ -58,9 +58,13 @@
   }
 }
 
-@keyframes blinkText{
-  from{color: white;}
-  to{color: transparent;}
+@keyframes blinkText {
+  from {
+    color: white;
+  }
+  to {
+    color: transparent;
+  }
 }
 
 /* The typewriter cursor effect */
@@ -233,8 +237,11 @@ img {
 
 /*first section*/
 .header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: 100vh;
-  padding: 226px 0 225px;
+  padding: 126px 0 125px;
 }
 
 .main-title {
@@ -289,10 +296,14 @@ img {
     linear-gradient(180deg, #46a1c0 0%, #261965 100%) border-box;
 }
 
-.social__line .twitter-timeline {
+.twitter-timeline {
   border-radius: 31px;
   border: 2px solid #261965;
   color: #fff;
+}
+
+.twitter-timeline-mob {
+  display: none;
 }
 
 #twitter-widget-0 {
