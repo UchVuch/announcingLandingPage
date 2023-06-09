@@ -93,13 +93,13 @@
 
     #twitter-widget-0 {
         width: 280px !important;
-        height: 280px !important;
+        height: 490px !important;
     }
 
     .social__line {
         position: relative;
         width: 280px;
-        height: 280px;
+        height: 490px;
         margin-top: 10px;
         margin-bottom: 22px;
     }
